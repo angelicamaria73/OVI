@@ -1,0 +1,140 @@
+body{
+    background: #F7F3F1;
+    font-family: sans-serif;
+}
+
+/*ESTILOS GENERALES*/
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav li{
+  line-height: 2.5rem;
+  position: relative;
+}
+
+nav li ul{
+    position: absolute;
+}
+
+nav a{
+    color: #ddd;
+    display: block;
+    padding: 0 3em;
+    text-decoration: none;
+    transition: .5s;
+}
+
+nav a:hover{
+    background: rgba(0, 0, 0, .5);
+}
+
+/*PRIMER NIVEL*/
+nav ul{
+   background: #615D5A;
+   display: table;
+   width: 100%;
+}
+
+nav > ul > li{
+    float: left;
+}
+
+/*SEGUNDO NIVEL*/
+nav li li{
+    background: #615D5A;
+    max-height: 0;
+    transition: all .6s;
+    overflow: hidden;
+    width: 200px;
+}
+
+nav li:hover li{
+  max-height: 500px;
+  overflow: auto;
+}
+
+nav ul>li>ul{
+    top: 100%;
+}
+
+/*BANNER*/
+.banner{
+  width: 700px;
+  height: 300px;
+  border: 3px solid black;
+  margin: auto;
+  
+  background-size: 100% 100%;
+  animation: banner 10s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes banner{
+  0%, 20%{
+  background-image: url(C:/Users/AngelicaMaria/Desktop/OVI%20ANGÉLICA/IMAGENES/imagen1.jpg);
+  opacity: 1;
+  }
+  
+  21%, 24%{
+    opacity: 0.1;
+  }
+  25%, 45%{
+  background-image: url(C:/Users/AngelicaMaria/Desktop/OVI%20ANGÉLICA/IMAGENES/imagen2.jpg);
+   opacity: 1;
+  }
+  
+  46%, 49%{
+    opacity: 0.1;
+  }
+  50%, 70%{
+  background-image: url(C:/Users/AngelicaMaria/Desktop/OVI%20ANGÉLICA/IMAGENES/imagen3.jpg);
+  opacity: 1;
+  }
+  
+  71%, 74%{
+  opacity: 0.1;  
+  }
+  
+  75%, 100%{
+    background-image: url(C:/Users/AngelicaMaria/Desktop/OVI%20ANGÉLICA/IMAGENES/imagen4.jpg);
+    opacity: 1;
+  }
+}
+
+/*FORMULARIO BOLETÍN*/
+    #boletin form{
+        float: right;
+        margin-top: 15px;
+    }
+    
+    #boletin input [type="email"]{
+        padding: 4px;
+        height: 25px;
+        width: 250px;           
+    }
+    
+    /*CAJAS*/
+    #cajas{
+        margin-top: 20px;    
+    }
+    
+    #cajas .caja{
+        float: left;
+        text-align: center;
+        width: 10%;
+        padding: 10px;    
+    }
+    
+    /*FOOTER O PIE DE PÁGINA*/
+    footer{
+        padding: 10px;
+        margin-top: 10px;
+        background: #746E6A;
+        color: #fff;
+        text-align: center;
+        
+    }
+
+
